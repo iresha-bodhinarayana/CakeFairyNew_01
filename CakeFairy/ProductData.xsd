@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProductData" targetNamespace="http://tempuri.org/ProductData.xsd" xmlns:mstns="http://tempuri.org/ProductData.xsd" xmlns="http://tempuri.org/ProductData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProductData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ProductData" msprop:Generator_DataSetName="ProductData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Product_Management" msprop:Generator_TableClassName="Product_ManagementDataTable" msprop:Generator_TableVarName="tableProduct_Management" msprop:Generator_TablePropName="Product_Management" msprop:Generator_RowDeletingName="Product_ManagementRowDeleting" msprop:Generator_RowChangingName="Product_ManagementRowChanging" msprop:Generator_RowEvHandlerName="Product_ManagementRowChangeEventHandler" msprop:Generator_RowDeletedName="Product_ManagementRowDeleted" msprop:Generator_UserTableName="Product_Management" msprop:Generator_RowChangedName="Product_ManagementRowChanged" msprop:Generator_RowEvArgName="Product_ManagementRowChangeEvent" msprop:Generator_RowClassName="Product_ManagementRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Product_id" msprop:Generator_ColumnVarNameInTable="columnProduct_id" msprop:Generator_ColumnPropNameInRow="Product_id" msprop:Generator_ColumnPropNameInTable="Product_idColumn" msprop:Generator_UserColumnName="Product_id" type="xs:int" />
+              <xs:element name="Product_name" msprop:Generator_ColumnVarNameInTable="columnProduct_name" msprop:Generator_ColumnPropNameInRow="Product_name" msprop:Generator_ColumnPropNameInTable="Product_nameColumn" msprop:Generator_UserColumnName="Product_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Price_x0020__x0028_Per_x0020_1kg_x0029_" msprop:Generator_ColumnVarNameInTable="_columnPrice__Per_1kg_" msprop:Generator_ColumnPropNameInRow="_Price__Per_1kg_" msprop:Generator_ColumnPropNameInTable="_Price__Per_1kg_Column" msprop:Generator_UserColumnName="Price (Per 1kg)" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Product_Management" />
+      <xs:field xpath="mstns:Product_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
